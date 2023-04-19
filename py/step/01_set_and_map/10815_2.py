@@ -13,6 +13,7 @@ def cards_queries(cards, queries):
   results = []
   
   for query in queries:
+    result = 0
     first, last = 0, len(cards) - 1
     while first <= last:
       mid = (first + last) // 2
@@ -30,7 +31,7 @@ def cards_queries(cards, queries):
 # 메인 함수
 n = int(input_alt())
 
-cards = list(map(int, input_alt().split()))
+cards = set(map(int, input_alt().split()))
 
 m = int(input_alt())
 
