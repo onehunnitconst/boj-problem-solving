@@ -12,14 +12,14 @@ def print_alt(s):
 def cards_queries(cards, queries):
   results = []
   
-  # ## 브루트 포스
-  # for query in queries:
-  #   result = 0
-  #   for card in cards:
-  #     if card == query:
-  #       result = 1
-  #       break
-  #   results.append(result)
+  ## 브루트 포스
+  for query in queries:
+    result = 0
+    for card in cards:
+      if card == query:
+        result = 1
+        break
+    results.append(result)
   
 # 메인 함수
 n = int(input_alt())
